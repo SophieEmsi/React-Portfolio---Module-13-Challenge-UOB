@@ -1,25 +1,33 @@
-import logo from './logo.svg';
 import './App.css';
+import React from 'react';
 
-function App() {
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div style={{ display: 'flex', height: '100vh' }}>
+      <div
+        style={{
+          flex: 1,
+          backgroundColor: '#f2f2f2',
+          overflow: 'hidden',
+        }}
+      >
+        {/* Content for the static column (left side) */}
+      </div>
+      <div
+        style={{
+          flex: 1,
+          backgroundColor: '#fff',
+          overflowY: 'scroll',
+        }}
+      >
+        <div style={{ padding: '15px' }}>
+          {/* Content for the scrollable column (right side) */}
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
