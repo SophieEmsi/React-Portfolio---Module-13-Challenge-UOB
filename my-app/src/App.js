@@ -13,7 +13,12 @@ const App = () => {
           overflow: 'hidden',
         }}
       >
-        {/* Content for the static column (left side) */}
+        <header style={{ marginBottom: '80px', marginTop: '50px', color: '#3fcbd1' }}>
+    <h1>Sophie McNally</h1>
+    <h2>Front-End Web Developer</h2>
+    <p>I am a newly graduated bootcamp student looking for a junior or internship role</p>
+  </header>
+        {/* (left side) */}
       </div>
       <div
         style={{
@@ -22,8 +27,9 @@ const App = () => {
           overflowY: 'scroll',
         }}
       >
+        
         <div style={{ padding: '15px' }}>
-          {/* Content for the scrollable column (right side) */}
+          {/* (right side) */}
         </div>
       </div>
     </div>
