@@ -63,3 +63,36 @@
 .nav-link:hover::before {
   width: 30px; 
 }
+
+.portfolio-thumbnail {
+  width: 200px; 
+  height: auto; 
+}
+
+.portfolio-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  column-gap: 20px; 
+  align-items: start;
+}
+
+.portfolio-heading {
+  margin-bottom: 25px;
+  margin-top: 10px;
+}
+
+.portfolio-item {
+  margin-bottom: 20px;
+}
+
+.portfolio-description {
+  margin-bottom: 10px;
+}
+
+.portfolio-links {
+  margin-top: 10px;
+}
+
+.portfolio-link {
+  margin-right: 100px;
+}
