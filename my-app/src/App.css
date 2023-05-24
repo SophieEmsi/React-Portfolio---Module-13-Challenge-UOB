@@ -36,3 +36,30 @@
     transform: rotate(360deg);
   }
 }
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding-left: 30px;
+  transition: 0.3s;
+  margin-left: 10px; 
+}
+
+.nav-link::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: -10px; 
+  transform: translateY(-50%);
+  width: 20px;
+  height: 10%;
+  background-color: #3fcbd1;
+  transition: width 0.3s;
+}
+
+.nav-link:hover {
+  padding-left: 50px; 
+}
+
+.nav-link:hover::before {
+  width: 30px; 
+}
