@@ -14,15 +14,17 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #2f5bb3;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  color: #d01818; 
 }
+
+
 
 .App-link {
   color: #61dafb;
@@ -36,6 +38,7 @@
     transform: rotate(360deg);
   }
 }
+
 .nav-link {
   position: relative;
   display: inline-block;
@@ -64,6 +67,26 @@
   width: 30px; 
 }
 
+.about-container {
+  margin-bottom: 50px !important;
+}
+.experience-item {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.date {
+  flex: 0 0 150px; 
+  font-weight: bold;
+}
+
+.description {
+  flex: 1;
+}
+
+.description h3 {
+  margin-top: 0;
+}
 .portfolio-thumbnail {
   width: 200px; 
   height: auto; 
@@ -95,4 +118,37 @@
 
 .portfolio-link {
   margin-right: 100px;
+}
+
+.contact-icons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.icon {
+  color: #3fcbd1; 
+  font-size: 24px;
+}
+
+.contact-description {
+  text-align: center;
+  color: #555555; 
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  margin-top: 20px;
+}
+
+.contact-form textarea {
+  height: 150px;
+}
+
+.contact-form button[type="submit"] {
+  margin-top: 10px;
+  background-color: #3fcbd1;
+  color: #ffffff;
 }
