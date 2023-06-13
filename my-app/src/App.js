@@ -17,24 +17,24 @@ const App = () => {
           style={{
             flex: 0.75,
             width: '300px',
-            backgroundColor: 'white',
+            backgroundColor: '#1e1e1e',
             overflow: 'hidden',
             paddingTop: '80px',
             borderRight: '1px solid black',
             padding: '50px',
           }}
         >
-          <header style={{ marginBottom: '80px', marginTop: '50px', color: '#000000' }}>
+          <header style={{ marginBottom: '80px', marginTop: '50px', color: '#3fcbd1' }}>
     <h1>Sophie McNally</h1>
     <h2>Front-End Web Developer</h2>
     <p>I am a newly graduated bootcamp student looking for a junior or internship role</p>
   </header>
           <Nav defaultActiveKey="/" className="flex-column">
 
-            <Nav.Link as={Link} to="/about" eventKey="/about" className="nav-link" style={{ marginBottom: '10px', color: '#000000' }}>About</Nav.Link>
-            <Nav.Link as={Link} to="/experience" eventKey="/experience" className="nav-link" style={{ marginBottom: '10px', color: '#000000' }}>Experience</Nav.Link>
-            <Nav.Link as={Link} to="/portfolio" eventKey="/portfolio" className="nav-link" style={{ marginBottom: '10px', color: '#000000' }}>Portfolio</Nav.Link>
-            <Nav.Link as={Link} to="/contact" eventKey="/contact" className="nav-link" style={{ marginBottom: '10px', color: '#000000' }}>Contact</Nav.Link>
+            <Nav.Link as={Link} to="/about" eventKey="/about" className="nav-link" style={{ marginBottom: '10px', color: '#3fcbd1' }}>About</Nav.Link>
+            <Nav.Link as={Link} to="/experience" eventKey="/experience" className="nav-link" style={{ marginBottom: '10px', color: '#3fcbd1' }}>Experience</Nav.Link>
+            <Nav.Link as={Link} to="/portfolio" eventKey="/portfolio" className="nav-link" style={{ marginBottom: '10px', color: '#3fcbd1' }}>Portfolio</Nav.Link>
+            <Nav.Link as={Link} to="/contact" eventKey="/contact" className="nav-link" style={{ marginBottom: '10px', color: '#3fcbd1' }}>Contact</Nav.Link>
           </Nav>
         </div>
         {/* Right Side */}
