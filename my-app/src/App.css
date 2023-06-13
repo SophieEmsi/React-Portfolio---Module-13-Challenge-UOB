@@ -41,7 +41,7 @@
 
 .nav-link {
   position: relative;
-  display: inline-block;
+  display: block;
   padding-left: 30px;
   transition: 0.3s;
   margin-left: 10px; 
