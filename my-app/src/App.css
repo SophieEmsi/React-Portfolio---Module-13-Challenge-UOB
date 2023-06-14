@@ -45,6 +45,7 @@
   padding-left: 30px;
   transition: 0.3s;
   margin-left: 10px; 
+  margin-bottom: 100px;
 }
 
 .nav-link::before {
@@ -151,4 +152,36 @@
   margin-top: 10px;
   background-color: #3fcbd1;
   color: #ffffff;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-side {
+  flex: 0.3;
+  background-color: #1e1e1e;
+  color: #ffffff;
+  padding: 20px;
+}
+
+.center-image {
+  flex: 0.4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.custom-image {
+  max-width: 10%;
+  height: auto;
+}
+
+.right-side {
+  flex: 0.3;
+  background-color: #ffffff;
+  padding: 20px;
 }
