@@ -28,8 +28,10 @@ const App = () => {
             <Nav.Link as={Link} to="/contact" eventKey="/contact" className="nav-link">Contact</Nav.Link>
           </Nav>
         </div>
-        <div className="center-image">
-          <img src={bannerImage} alt="Image" className="custom-image" />
+        <div className="center-container">
+          <div className="center-image">
+            <img src={bannerImage} alt="Image" className="custom-image" />
+          </div>
         </div>
         {/* Right Side */}
         <div className="right-side">

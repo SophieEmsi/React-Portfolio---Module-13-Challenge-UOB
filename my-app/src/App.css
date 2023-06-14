@@ -157,31 +157,39 @@
 .app-container {
   display: flex;
   height: 100vh;
-  align-items: center;
-  justify-content: center;
+  position: relative;
 }
 
 .left-side {
-  flex: 0.3;
+  flex: 1;
   background-color: #1e1e1e;
   color: #ffffff;
   padding: 20px;
 }
 
-.center-image {
-  flex: 0.4;
+.center-container {
+  flex: 0.1; 
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.center-image {
+  display: inline-flex; 
+  align-items: center;
+  justify-content: center;
+  max-width: 100%; 
+}
+
 .custom-image {
-  max-width: 10%;
+  max-width: 100%; 
   height: auto;
+  width: auto; 
+  object-fit: contain;
 }
 
 .right-side {
-  flex: 0.3;
+  flex: 1;
   background-color: #ffffff;
   padding: 20px;
 }
