@@ -189,7 +189,7 @@
 }
 
 .right-side {
-  flex: 1;
+  flex: 1.5g;
   background-color: #ffffff;
   padding: 20px;
 }
