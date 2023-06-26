@@ -13,17 +13,9 @@
   }
 }
 
-.App-header {
-  background-color: #2f5bb3;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: #d01818; 
+header {
+  margin-bottom: 50px; 
 }
-
 
 
 .App-link {
@@ -156,14 +148,15 @@
 
 .app-container {
   display: flex;
-  height: 100%
- 
-}
+  height: 173.5vh;
+  position: relative;
 
+
+}
 .left-side {
   flex: 1;
-  background-color: #1e1e1e;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #591bb6;
   padding: 20px;
 }
 
@@ -179,6 +172,7 @@
   align-items: center;
   justify-content: center;
   max-width: 100%; 
+ 
 }
 
 .custom-image {
@@ -189,7 +183,13 @@
 }
 
 .right-side {
+  flex: 1.5;
   flex: 1.5g;
   background-color: #ffffff;
   padding: 20px;
+
+}
+
+.avatarImage {
+  max-height: 10%;
 }

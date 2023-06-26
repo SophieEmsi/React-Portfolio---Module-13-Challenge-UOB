@@ -9,6 +9,7 @@ import Portfolio from './components/pages/portfolio';
 import Contact from './components/pages/contact';
 
 import bannerImage from './components/assets/Banner.png';
+import avatar from './components/assets/Avatar.png';
 
 const App = () => {
   return (
