@@ -57,12 +57,13 @@ import About from './components/pages/about';
 import Experience from './components/pages/experience';
 import Portfolio from './components/pages/portfolio';
 import Contact from './components/pages/contact';
+import Home from './components/pages/home';
 
 class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      activeSection: 'aboutSection',
+      activeSection: 'homeSection',
     };
   }
 
@@ -72,6 +73,8 @@ class App extends React.Component {
 
   renderSection = () => {
     switch (this.state.activeSection) {
+      case 'homeSection':
+        return <Home />;
       case 'aboutSection':
         return <About />;
       case 'experienceSection':
@@ -87,6 +90,7 @@ class App extends React.Component {
 
   render() {
     const headings = [
+      { id: 'homeSection', title: 'Home' },
       { id: 'aboutSection', title: 'About Me' },
       { id: 'contactSection', title: 'Contact' },
       { id: 'experienceSection', title: 'Experience' },
@@ -100,17 +104,6 @@ class App extends React.Component {
           activeSection={this.state.activeSection}
           handleNavClick={this.handleNavClick}
         />
-
-        {/* Jumbotron */}
-        <div className="jumbotron">
-          <div className="container">
-            <h1>Welcome to my website!</h1>
-            <p>
-              This is the main content area where the selected section
-              information will be displayed.
-            </p>
-          </div>
-        </div>
 
         {/* Selected Section */}
         {this.renderSection()}
