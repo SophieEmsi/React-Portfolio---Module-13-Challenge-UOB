@@ -1,55 +1,3 @@
-// import React from 'react';
-// import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-// import { Nav } from 'react-bootstrap';
-// import './App.css';
-
-// import About from './components/pages/about';
-// import Experience from './components/pages/experience';
-// import Portfolio from './components/pages/portfolio';
-// import Contact from './components/pages/contact';
-
-// import bannerImage from './components/assets/Banner.png';
-// import avatar from './components/assets/Avatar.png';
-
-// const App = () => {
-//   return (
-//     <Router>
-//       <div className="app-container">
-//         {/* Left Side */}
-//         <div className="left-side">
-//           <header>
-//             <h1>Sophie McNally</h1>
-//             <h2>Front-End Web Developer</h2>
-//             <p>I am a newly graduated bootcamp student looking for a junior or internship role</p>
-//           </header>
-//           <Nav defaultActiveKey="/" className="flex-column">
-//             <Nav.Link as={Link} to="/about" eventKey="/about" className="nav-link">About</Nav.Link>
-//             <Nav.Link as={Link} to="/experience" eventKey="/experience" className="nav-link">Experience</Nav.Link>
-//             <Nav.Link as={Link} to="/portfolio" eventKey="/portfolio" className="nav-link">Portfolio</Nav.Link>
-//             <Nav.Link as={Link} to="/contact" eventKey="/contact" className="nav-link">Contact</Nav.Link>
-//           </Nav>
-//         </div>
-//         <div className="center-container">
-//           <div className="center-image">
-//             <img src={bannerImage} alt="Image" className="custom-image" />
-//           </div>
-//         </div>
-//         {/* Right Side */}
-//         <div className="right-side">
-//           <Routes>
-//             <Route path="/about" element={<About />} />
-//             <Route path="/experience" element={<Experience />} />
-//             <Route path="/portfolio" element={<Portfolio />} />
-//             <Route path="/contact" element={<Contact />} />
-//           </Routes>
-//         </div>
-//       </div>
-//     </Router>
-//   );
-// };
-
-// export default App;
-
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/pages/navbar.js';
@@ -68,13 +16,23 @@ class App extends React.Component {
   }
 
   handleNavClick = (sectionId) => {
-    if (sectionId === 'homeSection') {
-      // If "Home" button is clicked, clear the active section
-      this.setState({ activeSection: null });
-    } else {
-      // Otherwise, set the active section as usual
-      this.setState({ activeSection: sectionId });
-    }
+    this.setState({ activeSection: sectionId }, () => {
+      if (sectionId !== 'homeSection') {
+        const sectionElement = document.getElementById(sectionId);
+        if (sectionElement) {
+          const sectionOffsetTop =
+            sectionElement.getBoundingClientRect().top +
+            window.pageYOffset -
+            document.documentElement.clientTop;
+          window.scrollTo({
+            top: sectionOffsetTop,
+            behavior: 'smooth',
+          });
+        }
+      } else {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    });
   };
 
   renderSection = () => {
@@ -114,13 +72,22 @@ class App extends React.Component {
         </div>
 
         <div className="container mt-4">
-          {this.renderSection()}
+          <div id="aboutSection">
+            {this.state.activeSection === 'aboutSection' && <About />}
+          </div>
+          <div id="contactSection">
+            {this.state.activeSection === 'contactSection' && <Contact />}
+          </div>
+          <div id="experienceSection">
+            {this.state.activeSection === 'experienceSection' && <Experience />}
+          </div>
+          <div id="portfolioSection">
+            {this.state.activeSection === 'portfolioSection' && <Portfolio />}
+          </div>
         </div>
       </div>
     );
   }
 }
 
-
 export default App;
-
