@@ -105,8 +105,13 @@ class App extends React.Component {
           handleNavClick={this.handleNavClick}
         />
 
-        {/* Selected Section */}
-        {this.renderSection()}
+        <div className="jumbotron">
+          <Home handleNavClick={this.handleNavClick} />
+        </div>
+
+        <div className="container mt-4">
+          {this.renderSection()}
+        </div>
       </div>
     );
   }
