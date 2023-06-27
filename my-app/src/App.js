@@ -74,7 +74,7 @@ class App extends React.Component {
   renderSection = () => {
     switch (this.state.activeSection) {
       case 'homeSection':
-        return <Home />;
+        return <Home handleNavClick={this.handleNavClick} />;
       case 'aboutSection':
         return <About />;
       case 'experienceSection':
@@ -113,3 +113,4 @@ class App extends React.Component {
 }
 
 export default App;
+
