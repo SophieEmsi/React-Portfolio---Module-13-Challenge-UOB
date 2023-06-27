@@ -53,6 +53,10 @@
 import React from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Navbar from './components/pages/navbar.js';
+import About from './components/pages/about';
+import Experience from './components/pages/experience';
+import Portfolio from './components/pages/portfolio';
+import Contact from './components/pages/contact';
 
 class App extends React.Component {
   constructor(props) {
@@ -67,17 +71,18 @@ class App extends React.Component {
   };
 
   renderSection = (sectionId, title, content) => {
-    return (
-      <section
-        id={sectionId}
-        className={this.state.activeSection === sectionId ? 'bg-light' : ''}
-      >
-        <div className="container">
-          <h2>{title}</h2>
-          <p>{content}</p>
-        </div>
-      </section>
-    );
+    switch (sectionId) {
+      case 'aboutSection':
+        return <About />;
+      case 'experienceSection':
+        return <Experience />;
+      case 'portfolioSection':
+        return <Portfolio />;
+      case 'contactSection':
+        return <Contact />;
+      default:
+        return null;
+    }
   };
 
   render() {
@@ -108,10 +113,10 @@ class App extends React.Component {
         </div>
 
         {/* Sections */}
-        {this.renderSection('aboutSection', 'About Me', 'This is the content of section 1.')}
-        {this.renderSection('contactSection', 'Contact', 'This is the content of section 2.')}
-        {this.renderSection('experienceSection', 'Experience', 'This is the content of section 3.')}
-        {this.renderSection('portfolioSection', 'Portfolio', 'This is the content of section 4.')}
+        {this.renderSection('aboutSection', 'About Me')}
+        {this.renderSection('contactSection', 'Contact')}
+        {this.renderSection('experienceSection', 'Experience')}
+        {this.renderSection('portfolioSection', 'Portfolio')}
       </div>
     );
   }
