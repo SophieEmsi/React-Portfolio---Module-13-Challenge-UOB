@@ -68,21 +68,25 @@ class App extends React.Component {
   }
 
   handleNavClick = (sectionId) => {
-    this.setState({ activeSection: sectionId });
+    if (sectionId === 'homeSection') {
+      // If "Home" button is clicked, clear the active section
+      this.setState({ activeSection: null });
+    } else {
+      // Otherwise, set the active section as usual
+      this.setState({ activeSection: sectionId });
+    }
   };
 
   renderSection = () => {
     switch (this.state.activeSection) {
-      case 'homeSection':
-        return <Home handleNavClick={this.handleNavClick} />;
       case 'aboutSection':
         return <About />;
+      case 'contactSection':
+        return <Contact />;
       case 'experienceSection':
         return <Experience />;
       case 'portfolioSection':
         return <Portfolio />;
-      case 'contactSection':
-        return <Contact />;
       default:
         return null;
     }
@@ -116,6 +120,7 @@ class App extends React.Component {
     );
   }
 }
+
 
 export default App;
 
