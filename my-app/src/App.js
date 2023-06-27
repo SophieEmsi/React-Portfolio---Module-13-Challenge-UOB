@@ -70,8 +70,8 @@ class App extends React.Component {
     this.setState({ activeSection: sectionId });
   };
 
-  renderSection = (sectionId, title, content) => {
-    switch (sectionId) {
+  renderSection = () => {
+    switch (this.state.activeSection) {
       case 'aboutSection':
         return <About />;
       case 'experienceSection':
@@ -112,11 +112,8 @@ class App extends React.Component {
           </div>
         </div>
 
-        {/* Sections */}
-        {this.renderSection('aboutSection', 'About Me')}
-        {this.renderSection('contactSection', 'Contact')}
-        {this.renderSection('experienceSection', 'Experience')}
-        {this.renderSection('portfolioSection', 'Portfolio')}
+        {/* Selected Section */}
+        {this.renderSection()}
       </div>
     );
   }
