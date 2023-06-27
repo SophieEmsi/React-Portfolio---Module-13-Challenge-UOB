@@ -12,6 +12,10 @@ const Home = () => {
           <h1>Sophie McNally</h1>
           <h2>Front-End Web Developer</h2>
           <p>I am a newly graduated bootcamp student looking for a junior or internship role</p>
+          <div className="buttons">
+            <button className="btn btn-custom btn-primary">Projects</button>
+            <button className="btn btn-custom btn-primary">Resume</button>
+              </div>
         </header>
       </div>
     </div>
