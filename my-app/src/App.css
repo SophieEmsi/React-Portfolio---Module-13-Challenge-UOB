@@ -265,7 +265,13 @@ header p {
   font-family: 'TT Interphases Mono', monospace;
   text-align: center;
   font-size: 26px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
 }
+
  .contact-container {
   font-family: 'TT Interphases Mono', monospace;
   text-align: center;
@@ -279,3 +285,35 @@ header p {
   text-align: center;
   font-size: 26px;
  }
+
+ .experience-page {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'TT Interphases Mono', monospace;
+}
+
+.left-column {
+  flex: 1;
+  margin-right: 50px;
+}
+
+.right-column {
+  width: 50%;
+  margin-left: 20px;
+}
+
+.skills-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  font-family: 'TT Interphases Mono', monospace;
+  gap: 20px;
+  
+}
+.heading-box {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
