@@ -99,10 +99,6 @@ header p {
   width: 30px; 
 }
 
-
-.about-container {
-  margin-bottom: 50px !important;
-}
 .experience-item {
   display: flex;
   margin-bottom: 20px;
@@ -161,29 +157,8 @@ header p {
 }
 
 .icon {
-  color: #3fcbd1; 
+  color: #000000; 
   font-size: 24px;
-}
-
-.contact-description {
-  text-align: center;
-  color: #555555; 
-  font-size: 16px;
-  margin-bottom: 40px;
-}
-
-.contact-form {
-  margin-top: 20px;
-}
-
-.contact-form textarea {
-  height: 150px;
-}
-
-.contact-form button[type="submit"] {
-  margin-top: 10px;
-  background-color: #3fcbd1;
-  color: #ffffff;
 }
 
 .app-container {
@@ -278,3 +253,29 @@ header p {
 .btn-custom:focus {
   outline: none;
 }
+
+.about-container {
+  font-family: 'TT Interphases Mono', monospace;
+  text-align: center;
+  margin-bottom: 50px !important;
+  
+}
+.about-heading {
+  margin-bottom: 25px;
+  font-family: 'TT Interphases Mono', monospace;
+  text-align: center;
+  font-size: 26px;
+}
+ .contact-container {
+  font-family: 'TT Interphases Mono', monospace;
+  text-align: center;
+  text-align: center;
+  color: #000000; 
+  font-size: 18px;
+  margin-bottom: 40px;
+ }
+ .contact-heading {
+  font-family: 'TT Interphases Mono', monospace;
+  text-align: center;
+  font-size: 26px;
+ }
