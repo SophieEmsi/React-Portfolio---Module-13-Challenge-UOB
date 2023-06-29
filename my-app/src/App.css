@@ -243,6 +243,7 @@ header p {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  border-radius: 10px;
 }
 
 .btn-custom:hover {
@@ -260,17 +261,7 @@ header p {
   margin-bottom: 50px !important;
   
 }
-.about-heading {
-  margin-bottom: 25px;
-  font-family: 'TT Interphases Mono', monospace;
-  text-align: center;
-  font-size: 26px;
-  background-color: black;
-  color: white;
-  padding: 10px;
-  border-radius: 10px;
-  display: inline-block;
-}
+
 
  .contact-container {
   font-family: 'TT Interphases Mono', monospace;
@@ -280,11 +271,7 @@ header p {
   font-size: 18px;
   margin-bottom: 40px;
  }
- .contact-heading {
-  font-family: 'TT Interphases Mono', monospace;
-  text-align: center;
-  font-size: 26px;
- }
+ 
 
  .experience-page {
   display: flex;
@@ -309,6 +296,7 @@ header p {
   gap: 20px;
   
 }
+
 .heading-box {
   background-color: black;
   color: white;

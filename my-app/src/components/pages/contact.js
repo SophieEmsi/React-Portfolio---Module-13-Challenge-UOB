@@ -5,7 +5,9 @@ import '../../App.css';
 const Contact = () => {
   return (
     <div className="contact-container">
-      <h2 className="contact-heading">Contact Me</h2>
+       <h3 style={{ marginBottom: '25px', marginTop: '10px' }}>
+          <span className="heading-box">Contact Me</span>
+      </h3>
       <div className="contact-icons">
         <a href="mailto:soph_mcnally@msn.com">
           <Email sx={{ fontSize: 50 }} className="icon" />

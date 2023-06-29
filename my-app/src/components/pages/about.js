@@ -7,7 +7,9 @@ import '../../App.css';
 const About = () => {
   return (
     <div>
-      <h3 className="about-heading">About Me</h3>
+       <h3 style={{ marginBottom: '25px', marginTop: '10px', textAlign: 'center' }}>
+          <span className="heading-box">About Me</span>
+      </h3>
       <div className="about-container">
         <p>
           As a recent graduate in Front-End web development, I am excited to kickstart 

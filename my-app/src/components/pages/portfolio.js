@@ -62,7 +62,9 @@ const Portfolio = () => {
 
   return (
     <div className="portfolio-container">
-      <h3 className="portfolio-heading">Portfolio</h3>
+      <h3 style={{ marginBottom: '25px', marginTop: '10px', textAlign: 'center' }}>
+          <span className="heading-box">Portfolio</span>
+      </h3>
       {projects.map((project, index) => (
         <div key={project.id} className="portfolio-item">
           <div className="thumbnail-container">
