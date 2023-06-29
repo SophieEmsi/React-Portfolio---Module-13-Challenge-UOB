@@ -61,25 +61,28 @@ const Portfolio = () => {
   ];
 
   return (
-    <div className="portfolio-container">
+    <div>
       <h3 style={{ marginBottom: '25px', marginTop: '10px', textAlign: 'center' }}>
-          <span className="heading-box">Portfolio</span>
+        <span className="heading-box">Portfolio</span>
       </h3>
-      {projects.map((project, index) => (
-        <div key={project.id} className="portfolio-item">
-          <div className="thumbnail-container">
-            <img src={project.image} alt={project.title} className="portfolio-thumbnail" />
-          </div>
-          <div className="portfolio-description">
-            <h4>{project.title}</h4>
-            <p>{project.description}</p>
-            <div className="portfolio-links">
-              <a href={project.url} target="_blank" rel="noopener noreferrer" className="portfolio-link">View Project</a>
-              <a href={project.url2} target="_blank" rel="noopener noreferrer" className="portfolio-link">View Repo</a>
+
+      <div className="portfolio-container">
+        {projects.map((project, index) => (
+          <div key={project.id} className="portfolio-item">
+            <div className="thumbnail-container">
+              <img src={project.image} alt={project.title} className="portfolio-thumbnail" />
+            </div>
+            <div className="portfolio-description">
+              <h4>{project.title}</h4>
+              <p>{project.description}</p>
+              <div className="portfolio-links">
+                <a href={project.url} target="_blank" rel="noopener noreferrer" className="portfolio-link">View Project</a>
+                <a href={project.url2} target="_blank" rel="noopener noreferrer" className="portfolio-link">View Repo</a>
+              </div>
             </div>
           </div>
-        </div>
-      ))}
+        ))}
+      </div>
     </div>
   );
 };

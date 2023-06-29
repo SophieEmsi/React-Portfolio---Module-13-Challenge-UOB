@@ -116,24 +116,28 @@ header p {
 .description h3 {
   margin-top: 0;
 }
-.portfolio-thumbnail {
-  width: 200px; 
-  height: auto; 
-}
 
-.portfolio-item {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  column-gap: 20px; 
-  align-items: start;
+.portfolio-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .portfolio-heading {
   margin-bottom: 25px;
   margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+
+.portfolio-thumbnail {
+  width: 200px;
+  height: auto;
 }
 
 .portfolio-item {
+  width: calc(50% - 10px);
   margin-bottom: 20px;
 }
 
@@ -148,6 +152,8 @@ header p {
 .portfolio-link {
   margin-right: 100px;
 }
+
+
 
 .contact-icons {
   display: flex;
