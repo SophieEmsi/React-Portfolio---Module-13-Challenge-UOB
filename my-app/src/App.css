@@ -117,41 +117,46 @@ header p {
   margin-top: 0;
 }
 
-.portfolio-container {
+
+.carousel-container {
   display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.carousel-inner {
+  display: flex;
+  justify-content: space-between; /* Distribute cards evenly */
+  align-items: center;
   flex-wrap: wrap;
-  justify-content: space-between;
+  gap: 20px; /* Add a gap between cards */
 }
 
-.portfolio-heading {
-  margin-bottom: 25px;
-  margin-top: 10px;
+.carousel-item {
+  flex-basis: calc(33.33% - 20px); /* Display 3 cards at a time with a gap of 20px */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.carousel-item .card {
   width: 100%;
+}
+
+.carousel-image {
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.carousel-caption {
   text-align: center;
+  width: 100%;
 }
 
-
-.portfolio-thumbnail {
-  width: 200px;
-  height: auto;
-}
-
-.portfolio-item {
-  width: calc(50% - 10px);
-  margin-bottom: 20px;
-}
-
-.portfolio-description {
-  margin-bottom: 10px;
-}
-
-.portfolio-links {
-  margin-top: 10px;
-}
-
-.portfolio-link {
-  margin-right: 100px;
-}
 
 
 
@@ -311,3 +316,12 @@ header p {
   display: inline-block;
 }
 
+.portfolio-card {
+  width: calc(33.33% - 10px); 
+}
+
+@media (max-width: 992px) {
+  .portfolio-card {
+    width: calc(50% - 10px); 
+  }
+}
