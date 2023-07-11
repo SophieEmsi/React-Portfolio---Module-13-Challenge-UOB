@@ -1,7 +1,5 @@
 import React from 'react';
 import profileImage from '../assets/profile-image.png';
-import Experience from './experience';
-import Portfolio from './portfolio';
 
 const Home = ({ handleNavClick }) => {
     return (
