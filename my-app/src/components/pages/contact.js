@@ -15,7 +15,7 @@ const Contact = () => {
         <a href="https://github.com/SophieEmsi">
           <GitHub sx={{ fontSize: 50 }} className="icon" />
         </a>
-        <a href="https://www.linkedin.com/in/your-linkedin-username">
+        <a href="https://www.linkedin.com/in/sophie-mcnally-52888327a/">
           <LinkedIn sx={{ fontSize: 50 }} className="icon" />
         </a>
       </div>

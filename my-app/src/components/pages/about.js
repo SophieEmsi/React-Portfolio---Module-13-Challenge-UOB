@@ -7,7 +7,7 @@ import '../../App.css';
 const About = () => {
   return (
     <div>
-       <h3 style={{ marginBottom: '25px', marginTop: '10px', textAlign: 'center' }}>
+       <h3 style={{ marginBottom: '25px', marginTop: '10px', textAlign: 'center', fontFamily: 'TT Interphases Mono, monospace' }}>
           <span className="heading-box">About Me</span>
       </h3>
       <div className="about-container">

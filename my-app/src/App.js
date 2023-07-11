@@ -56,7 +56,7 @@ class App extends React.Component {
       { id: 'aboutSection', title: 'About Me' },
       { id: 'contactSection', title: 'Contact' },
       { id: 'experienceSection', title: 'Experience' },
-      { id: 'portfolioSection', title: 'Portfolio' },
+      { id: 'portfolioSection', title: 'Projects' },
     ];
 
     return (
